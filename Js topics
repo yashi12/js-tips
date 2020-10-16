@@ -185,7 +185,7 @@ msg(); // Message: Hello World! <-- after 2 seconds
 >The JavaScript async...await syntax allows multiple promises to be initiated and then resolved for values when required during execution of the program. As an alternate to chaining .then() functions, it offers better maintainablity of the code and a close resemblance synchronous code.
 
 ###Async Function Error Handling
-```aidl
+```
 let json = '{ "age": 30 }'; // incomplete data
 
 try {
@@ -206,7 +206,7 @@ try {
  >GET requests have no body, so the information that the source requires, in order to return the proper response, must be included in the request URL path or query string.
 
 ###Asynchronous calls with XMLHttpRequest
-```aidl
+```
 const xhr = new XMLHttpRequest();
 xhr.open('GET', 'mysite.com/api/getjson');
 ```
@@ -217,7 +217,7 @@ xhr.open('GET', 'mysite.com/api/getjson');
 > The given code block is a basic example of how an HTTP GET request is made to the specified URL.
 
 ###The query string in a URL
-```aidl
+```
 const requestUrl = 'http://mysite.com/api/vendor?name=kavin&id=35412';
 ```
 >Query strings are used to send additional information to the server during an HTTP GET request.
@@ -231,7 +231,7 @@ const requestUrl = 'http://mysite.com/api/vendor?name=kavin&id=35412';
  >Query strings should be url-encoded in case of the presence of URL unsafe characters.
 
 ###XMLHttpRequest GET Request Requirements
-```aidl
+```
 const req = new XMLHttpRequest();
 req.responseType = 'json';
 req.open('GET', '/myendpoint/getdata?id=65');
@@ -251,7 +251,7 @@ req.send();
 > For a POST request, the new information is stored in the body of the request.
 
 ###HTTP POST request with the XMLHttpRequest API
-```aidl
+```
 const data = {
   fish: 'Salmon',
   weight: '1.5 KG',
@@ -282,7 +282,7 @@ fetch('url')
 >The .json() method will resolve a returned promise to a JSON object, parsing the body text as JSON.
  
 ###promise url parameter fetch api
-```aidl
+```
 
 fetch('url')
 .then(
@@ -301,7 +301,7 @@ fetch('url')
  The example block of code shows .json() method that returns a promise that resolves to a JSON-formatted response body as a JavaScript object.
 
 ###async await syntax
-```aidl
+```
 const getSuggestions = async () => {
   const wordQuery = inputField.value;
   const endpoint = `${url}${queryParams}${wordQuery}`;
