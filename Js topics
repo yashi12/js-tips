@@ -1,9 +1,9 @@
-#Must learn topics in JAVA SCRIPT
+# Must learn topics in JAVA SCRIPT
 
 ## NOTE: ES6 (most important in JavaScript)
 
-###JAVA SCRIPT:
->JavaScript is a programming language that powers the dynamic behavior on most websites. Alongside HTML and CSS, it is a core technology that makes the web run.
+### JAVA SCRIPT:
+> JavaScript is a programming language that powers the dynamic behavior on most websites. Alongside HTML and CSS, it is a core technology that makes the web run.
 <ol>
     <li>Var, let, const</li>	
     <li>Interactions: Alert, Prompt, Confirm</li>
@@ -83,7 +83,7 @@
 ##Promises
 
 ####States of a JavaScript Promise
-```aidl
+```
 const promise = new Promise((resolve, reject) => {
   const res = true;
   // An asynchronous operation.
@@ -106,7 +106,7 @@ promise.then((res) => console.log(res), (err) => alert(err));
  >In the given code block, if the Promise is on resolved state, the first parameter holding a callback function of the then() method will print the resolved value. Otherwise, an alert will be shown.
 
 ###Avoiding nested Promise and .then()
-```aidl
+```
 const promise = new Promise((resolve, reject) => {  
   setTimeout(() => {
     resolve('*');
@@ -132,7 +132,7 @@ promise.then(twoStars).then(oneDot).then(print);
  
 > Chaining helps streamline the development process because it makes the code more readable and easier to debug.
 ###Chaining multiple .then() methods
-```aidl
+```
 const promise = new Promise(resolve => setTimeout(() => resolve('dAlan'), 100));
 
 promise.then(res => {
@@ -148,7 +148,7 @@ promise.then(res => {
  >In the code block, a couple of .then() methods are chained together. Each method deals with the resolved value of their respective promises.
 ##Async-await
 ###Resolving JavaScript Promises
-```aidl
+```
 let promise1 = Promise.resolve(5);
 let promise2 = 44;
 let promise3 = new Promise(function(resolve, reject) {
@@ -163,7 +163,7 @@ Promise.all([promise1, promise2, promise3]).then(function(values) {
 >When using JavaScript async...await, multiple asynchronous operations can run concurrently. If the resolved value is required for each promise initiated, Promise.all() can be used to retrieve the resolved value, avoiding unnecessary blocking.
 
 ###Async Await Promises
-```aidl
+```
 function helloWorld() {
   return new Promise(resolve => {
     setTimeout(() => {
